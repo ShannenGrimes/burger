@@ -2,12 +2,13 @@
 var express = require("express");
 // Import the burger models
 var burger = require("../models/burger.js");
+var express = require("express");
 
 // Create the router for the app, and export the router at the end of your file.
 var router = express.Router();
 // Create routes
 router.get("/", function (req, res) {
-    burger.selectAll(function(data) {
+    burger.findALL(function(data) {
         var hbsObject = {
             burgers: data
         };
