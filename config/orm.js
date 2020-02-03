@@ -30,7 +30,7 @@ function objToSql(ob) {
 
 var orm = {
   // Display all burgers in the db.
-  findALL: function(table, cb) {
+  selectALL: function(table, cb) {
     var queryString = "SELECT * FROM " + table + ";";
 
     connection.query(queryString, function(err, result) {
