@@ -26,7 +26,7 @@ function objToSql(ob) {
 
 var orm = {
   // Display burgers in the db.
-  selectALL: function(table, cb) {
+  selectAll: function(table, cb) {
     var queryString = "SELECT * FROM " + table + ";";
 
     connection.query(queryString, function(err, result) {
