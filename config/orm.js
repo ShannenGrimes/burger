@@ -9,13 +9,10 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 
-// Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
   var arr = [];
-  // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
     var value = ob[key];
-    // check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
@@ -24,12 +21,11 @@ function objToSql(ob) {
       arr.push(key + "=" + value);
     }
   }
-  // translate array of strings to a single comma-separated string
-  return arr.toString();
+   return arr.toString();
 }
 
 var orm = {
-  // Display all burgers in the db.
+  // Display burgers in the db.
   selectALL: function(table, cb) {
     var queryString = "SELECT * FROM " + table + ";";
 
@@ -93,5 +89,5 @@ var orm = {
   }
 };
 
-// Export the ORM object in module.exports.
+// eslint-disable-next-line no-undef
 module.exports = orm;
