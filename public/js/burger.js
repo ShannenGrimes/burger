@@ -1,4 +1,5 @@
 $(function() {
+  console.log("youre in burgerja2 -------")
   // Add a new burger.
   $(".create-form").on("submit", function(event) {
     event.preventDefault();
@@ -9,7 +10,9 @@ $(function() {
         .trim(),
       devoured: 0
     };
-
+    console.log("--------")
+  console.log(newBurger)
+  console.log("-------------------")
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",

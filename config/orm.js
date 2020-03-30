@@ -72,7 +72,7 @@ var orm = {
       cb(result);
     });
   },
-  // Delete a burger from the db.
+  // Delete a burger from the db
   deleteOne: function(table, condition, cb) {
     var queryString = "DELETE FROM " + table;
     queryString += " WHERE ";
