@@ -1,5 +1,5 @@
 $(function() {
-  console.log("youre in burgerja2 -------")
+  console.log("you're in a burger")
   // Add a new burger.
   $(".create-form").on("submit", function(event) {
     event.preventDefault();

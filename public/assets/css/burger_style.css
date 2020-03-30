@@ -1,12 +1,54 @@
 
 .jumbotron {
-    background-image: url("../img/background.jpg");
+    background-image: url("/assets/img/mainburger.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-top: 10px;
 }
 
-#eatenbutton {
+#newburger {
+    border-radius: 5px;
+}
+
+#color-override {
+    color: #fff;
+}
+
+#lefthead {
+    background-color: #077728;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#eatbutton, #trashbutton {
     float: right;
+}
+
+#righthead {
+    background-color: #db922c;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: 'Spicy Rice', cursive;
+    text-align: center;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+label {
+    font-size: 1.2em;
+    font-family: 'Anton', sans-serif;
 }
